@@ -1,0 +1,75 @@
+body {
+    background-color: wheat;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: scroll;
+  }
+  header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20;
+  }
+  div p{
+    padding-top: 10%;
+  }
+  #timer {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #f92672;
+    text-shadow: 2px 2px #f8a5c2;
+    /* In the current code, the value 2px 2px #f8a5c2 sets a shadow that is 2 pixels to the right and 2 pixels down of the text, with a blur radius of 0 (no blur), and a color of #f8a5c2. */
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+  }
+  
+  #buttons {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  
+  button {
+    background-color: #f92672;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    /* In the current code, the value 1.5rem 4rem sets a padding of 1.5rem (24px) for the top and bottom sides of the buttons, and 4rem (64px) for the left and right sides of the buttons. */
+    margin: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  button:hover {
+    background-color: #f44583;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  button:active {
+    background-color: #f34282;
+    box-shadow: none;
+  }
+  
+  button[disabled] {
+    opacity: 0.5;
+    cursor: default;
+  }
+  footer{
+    background-color: wheat;
+    padding: 20px;
+    text-align: center;
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+}
